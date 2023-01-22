@@ -5,6 +5,7 @@
 
 
 ///////////////////////////////
+// small screen
 
 @media (max-width: 991.98px) {
   .sticky-wrapper .shrink {
@@ -19,21 +20,54 @@
   .align-test {
     justify-items: flex-start;
   }
-}
 
-@media (max-width: 991.98px) {
   .site-navbar .site-logo {
     display: block !important;
     float: left;
     position: relative;
   }
+
+  .dropdownButton {
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 94%;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: black;
+    font-size: 26px;
+
+      &::after {
+        display: none;
+      }
+  }
+
+  .dropdownMenu {
+    display: none;
+  }
+
+  .dropdownMenuActive {
+    display: block;
+  }
+
+
 }
 
+// big screen
 
 @media (min-width: 991.98px) {
   .d-none {
     display: flex !important;
     justify-content: center !important;
+  }
+
+  .dropdownButton {
+    display: none;
+  }
+
+  .dropdownMenu {
+    display: none;
   }
 }
 
