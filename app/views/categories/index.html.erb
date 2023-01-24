@@ -1,0 +1,15 @@
+
+
+<h1>Home page show all categories</h1>
+
+<% @categories.each do |category| %>
+      <div class="co-12 col-sm-6 col-md-4 shadow">
+        <%= link_to category_path(category), class: "text-decoration-none" do %>
+          <div class="card-category " data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
+            <h2><%= category.title %></h2>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+<%= link_to "Create categori", new_category_path, class: "btn btn-flat border bg-primary text-white" %>

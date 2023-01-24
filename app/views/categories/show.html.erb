@@ -1,0 +1,6 @@
+<h2><%= @category.title %></h2>
+
+<%# need to fix image position with css %>
+<div class="card-category card-large h-100" style="background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @category.photo.attached? ? cl_image_path(@category.photo.key, crop: :fill) : image_path("logo-color.png", width: 400, height: 800, crop: :fill) %>)">
+    <h2 style="height: 800px"><%= @category.title %></h2>
+  </div>
