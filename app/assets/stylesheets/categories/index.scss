@@ -1,12 +1,17 @@
-body, html {
+html {
   height: 100%;
   margin: 0;
-  // background: green;
+  margin-top: 145px;
 }
 
-h1 {
-  color: black;
+body {
+  margin-top: 145px;
+  height: 100%;
+  margin: 0;
 }
+
+
+/////////////
 
 section {
   overflow: hidden;
