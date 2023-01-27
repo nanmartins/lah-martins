@@ -1,8 +1,15 @@
+<section>
+  <span>
+    <h1>Header</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </span>
+</section>
 
+<section class="cat-show-scroll">
+  <span>
+    <h1>Home page show all categories</h1>
 
-<h1>Home page show all categories</h1>
-
-<% @categories.each do |category| %>
+    <% @categories.each do |category| %>
       <div class="co-12 col-sm-6 col-md-4 shadow">
         <%= link_to category_path(category), class: "text-decoration-none" do %>
           <div class="card-category " data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
@@ -12,4 +19,35 @@
       </div>
     <% end %>
 
-<%= link_to "Create categori", new_category_path, class: "btn btn-flat border bg-primary text-white" %>
+    <%= link_to "Create category", new_category_path, class: "btn btn-flat border bg-primary text-white" %>
+
+  </span>
+</section>
+
+<section>
+  <span>
+    <h1>Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </span>
+</section>
+
+<section>
+  <span>
+    <h1>Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </span>
+</section>
+
+<section>
+  <span>
+    <h1>test</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </span>
+</section>
+
+<section>
+  <span>
+    <h1>Footer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </span>
+</section>
