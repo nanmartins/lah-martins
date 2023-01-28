@@ -1,4 +1,8 @@
 <%# need to fix image position with css %>
 <div class="card-category card-large h-80" style="background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @category.photo.attached? ? cl_image_path(@category.photo.key, crop: :fill) : image_path("logo-color.png", width: 400, height: 800, crop: :fill) %>)">
-    <h2 class="d-flex align-items-center justify-content-center cat-show-title" style="height: 800px"><%= @category.title %></h2>
-  </div>
+  <h2 class="d-flex align-items-center justify-content-center cat-show-title" style="height: 800px"><%= @category.title %>
+  </h2>
+</div>
+<div class="d-flex justify-content-end">
+      <%= button_to "delete", category_path(@category), method: :delete, class: "btn", data: { confirm: "Are you sure you want to delete?" } %>
+    </div>
