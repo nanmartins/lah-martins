@@ -11,6 +11,7 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Category.new
+    @category.save
   end
 
   def create
