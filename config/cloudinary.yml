@@ -3,3 +3,9 @@ development:
   api_key: "945242564278771"
   api_secret: "t_R6apAMRKzC53fBZWJ3Y0OqYfY"
   secure: true
+
+production:
+  cloud_name: "dpskrziq1"
+  api_key: "945242564278771"
+  api_secret: "t_R6apAMRKzC53fBZWJ3Y0OqYfY"
+  secure: true
