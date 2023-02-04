@@ -8,6 +8,11 @@
 // small screen
 
 @media (max-width: 991.98px) {
+
+  html {
+    margin-top: 98px;
+  }
+
   .sticky-wrapper .shrink {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
