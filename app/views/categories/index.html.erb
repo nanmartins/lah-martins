@@ -1,16 +1,16 @@
-<section>
+<section id="scrollspyhome">
   <span>
     <h1>Header</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </span>
 </section>
 
-<section id="scrollspyportifolio"class="cat-show-scroll">
+<section id="scrollspyportfolio"class="cat-show-scroll">
   <span>
-    <h1>Home page show all categories</h1>
+    <h1>Portfolio</h1>
     <div class="row index-cat-row">
       <% @categories.each do |category| %>
-        <div class="co-12 col-sm-6 col-md-4 shadow">
+        <div class="col-12 col-sm-6 col-md-4 shadow">
           <%= link_to category_path(category), class: "text-decoration-none" do %>
             <div class="card-category " data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
               <h2><%= category.title %></h2>
@@ -25,17 +25,17 @@
   </span>
 </section>
 
-<section id="scrollspyabout">
+<section>
   <span>
     <h1>Content 1</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </span>
 </section>
 
-<section>
+<section id="scrollspyabout">
   <span>
-    <h1>Content 2</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h1>About</h1>
+    <p>I'm a photographer specializing in babies for over 10 years. I love doing this, each session is unique, and each one I do with a lot of love and care in every detail, if that's what you're looking for, you're in the right place, and it will be a great pleasure to record moments of your life.</p>
   </span>
 </section>
 
