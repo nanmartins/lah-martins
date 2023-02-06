@@ -5,6 +5,7 @@
 
 .nav-link, .dropdown-item {
   font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
 }
 
 
@@ -23,7 +24,7 @@
   }
 
   .navbar-brand img {
-    width: 120px;
+    width: 110px;
   }
 
   .align-test {
@@ -40,7 +41,7 @@
     display: block;
     position: absolute;
     top: -40px;
-    left: 94%;
+    right: 0px;
     padding: 0;
     background-color: rgba(255, 255, 255, 0);
     border: none;
@@ -58,6 +59,11 @@
 
   .dropdownMenuActive {
     display: block;
+    margin-top: 20px;
+    text-align: end;
+    letter-spacing: 5px;
+    line-height: 30px;
+    font-weight: 200;
   }
 
 
