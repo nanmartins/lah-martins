@@ -77,6 +77,13 @@ section:nth-of-type(6) {
   padding: 0;
 }
 
+.card-category {
+  height: 40vh;
+  width: calc(80vw / 3);
+  background-size: cover;
+  background-position: center;
+}
+
 
 
 @media (max-width: 991.98px) {
@@ -87,5 +94,19 @@ section:nth-of-type(6) {
 
   section:nth-of-type(1) {
     height: calc(100% - 98px);
+  }
+
+  .card-category {
+    display: grid;
+    // align-items: center;
+    height: calc(45vh / 3);
+    margin: 0;
+    width: 90vw;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .index-cat-link {
+    width: 90vw;
   }
 }

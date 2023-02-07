@@ -1,8 +1,8 @@
 <section id="scrollspyhome">
-  <span>
+  <%# <span>
     <h1>Header</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  </span>
+  </span> %>
 </section>
 
 <section id="scrollspyportfolio"class="cat-show-scroll">
@@ -11,9 +11,9 @@
     <div class="row index-cat-row">
       <% @categories.each do |category| %>
         <div class="col-12 col-sm-6 col-md-4 shadow">
-          <%= link_to category_path(category), class: "text-decoration-none" do %>
-            <div class="card-category " data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
-              <h2><%= category.title %></h2>
+          <%= link_to category_path(category), class: "text-decoration-none index-cat-link" do %>
+            <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
+              <%# <%= category.photo %>
             </div>
           <% end %>
         </div>
