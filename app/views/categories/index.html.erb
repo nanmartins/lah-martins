@@ -10,7 +10,7 @@
     <h1>Portfolio</h1>
     <div class="row index-cat-row">
       <% @categories.each do |category| %>
-        <div class="col-12 col-sm-6 col-md-4 shadow">
+        <div class="col-12 col-sm-6 col-md-4 shadow index-cat-cards">
           <%= link_to category_path(category), class: "text-decoration-none index-cat-link" do %>
             <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
               <%# <%= category.photo %>
