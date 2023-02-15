@@ -102,6 +102,10 @@ section:nth-of-type(6) {
     height: calc(100% - 98px);
   }
 
+  section:nth-of-type(2) {
+    height: calc(100% - 98px);
+  }
+
   .index-cat-row {
     display: grid;
     align-items: center;
