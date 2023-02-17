@@ -1,0 +1,31 @@
+
+<%= form_with model: @contact do |form| %>
+  <% if @contact %>
+    <div id="error_explanation">
+      <h2><%= pluralize(:contact.errors.count, "error") %> impediram que a mensagem fosse enviada</h2>
+      <ul>
+        <% @contact.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="contact-form-container">
+    <div class="field">
+      <%= form.label :name, class: "form-name-label" %>
+      <%= form.text_field :name, class: "form-name-field" %>
+    </div>
+    <div class="field">
+      <%= form.label :email, class: "form-name-label" %>
+      <%= form.email_field :email, class: "form-name-field" %>
+    </div>
+    <div class="field">
+      <%= form.label :message %>
+      <%= form.text_area :message %>
+    </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  </div>
+<% end %>
