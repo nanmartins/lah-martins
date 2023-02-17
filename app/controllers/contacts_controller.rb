@@ -4,9 +4,9 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(contact_params)
-
-    if @contact.valid?
+    @contact = Contact.create(contact_params)
+    @contact.save!
+    if @contact.save
       ContactMailer.contact_email(@contact).deliver_now
       flash[:notice] = "Mensagem enviada com sucesso"
       redirect_to root_path
@@ -19,6 +19,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :message)
+    params.permit(:name, :email, :message)
   end
 end
