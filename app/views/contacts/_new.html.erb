@@ -12,20 +12,26 @@
   <% end %>
 
   <div class="contact-form-container">
-    <div class="field">
-      <%= form.label :name, class: "form-name-label" %>
-      <%= form.text_field :name, class: "form-name-field" %>
+    <div class="contat-name-email">
+      <div class="field">
+        <%= form.label :name, class: "form-name-label" %>
+        <%= form.text_field :name, class: "form-name-field" %>
+      </div>
+      <div class="field">
+        <%= form.label :email, class: "form-name-label" %>
+        <%= form.email_field :email, class: "form-name-field" %>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :email, class: "form-name-label" %>
-      <%= form.email_field :email, class: "form-name-field" %>
+
+    <div class="contact-message">
+      <div class="field">
+        <%= form.label :message %>
+        <%= form.text_area :message %>
+      </div>
+      <div class="actions">
+        <%= form.submit %>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :message %>
-      <%= form.text_area :message %>
-    </div>
-    <div class="actions">
-      <%= form.submit %>
-    </div>
+
   </div>
 <% end %>
