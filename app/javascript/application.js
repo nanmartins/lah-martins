@@ -2,7 +2,9 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
-
+import { Turbo } from "@hotwired/turbo-rails"
 
 // custom js import
 import "./custom/navDropDown";
+
+Turbo.session.drive = false;
