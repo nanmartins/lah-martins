@@ -1,21 +1,11 @@
 
-<%= form_with model: @contact do |form| %>
-  <% if @contact %>
-    <div id="error_explanation">
-      <h2><%= pluralize(:contact.errors.count, "error") %> impediram que a mensagem fosse enviada</h2>
-      <ul>
-        <% @contact.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_with model: @contact, html: { id: "contact-form" } do |form| %>
 
   <div class="contact-form-container">
     <div class="contat-name-email">
       <div class="field">
         <%= form.label :name, class: "form-name-label" %>
-        <%= form.text_field :name, class: "form-name-field" %>
+        <%= form.text_field :name, class: "" %>
       </div>
       <div class="field">
         <%= form.label :email, class: "form-name-label" %>
@@ -25,8 +15,8 @@
 
     <div class="contact-message">
       <div class="field">
-        <%= form.label :message %>
-        <%= form.text_area :message %>
+        <%= form.label :message, class: "form-message-label" %>
+        <%= form.text_area :message, class: "form-message-field" %>
       </div>
       <div class="actions">
         <%= form.submit %>
