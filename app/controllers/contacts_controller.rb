@@ -1,19 +1,15 @@
 class ContactsController < ApplicationController
-  def new
-    @contact = Contact.new
-  end
 
   def create
-    @contact = Contact.create(contact_params)
-    @contact.save!
-    if @contact.save
-      ContactMailer.contact_email(@contact).deliver_now
-      flash[:notice] = "Mensagem enviada com sucesso"
-      redirect_to root_path
-    else
-      flash[:alert] = "Algo deu errado, por favor tente novamente"
-      render :new
-    end
+    @contact = Contact.new(contact_params)
+      if @contact.valid?
+        ContactMailer.contact_email(@contact).deliver_now
+        flash[:notice] = "Mensagem enviada com sucesso"
+        redirect_to root_path
+      else
+        flash[:alert] = "Não foi possível enviar o email. Tente novamente mais tarde."
+        render :new
+      end
   end
 
   private
@@ -21,4 +17,5 @@ class ContactsController < ApplicationController
   def contact_params
     params.permit(:name, :email, :message)
   end
+
 end
