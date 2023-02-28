@@ -29,7 +29,6 @@ class CategoriesController < ApplicationController
     redirect_to categories_path
   end
 
-
   private
 
   def set_category
@@ -39,4 +38,5 @@ class CategoriesController < ApplicationController
   def category_params
     params.require(:category).permit(:title, :photo)
   end
+
 end

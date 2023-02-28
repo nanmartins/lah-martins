@@ -9,3 +9,21 @@ import "./custom/navDropDown";
 
 
 Turbo.session.drive = false;
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof flash !== "undefined" && flash.notice) {
+    alert(flash.notice);
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const flashContainer = document.querySelector(".flash-message");
+
+  if (flashContainer) {
+    setTimeout(() => {
+      flashContainer.remove();
+    }, 5000); // remove after 5 seconds
+  }
+});
