@@ -5,25 +5,7 @@
   </span> %>
 </section>
 
-<section id="scrollspyportfolio" class="cat-show-scroll">
-  <span>
-    <%# <h1>Portfolio</h1> %>
-    <div class="row index-cat-row">
-      <% @categories.each do |category| %>
-        <div class="col-12 col-sm-6 col-md-4 shadow index-cat-cards">
-          <%= link_to category_path(category), class: "text-decoration-none index-cat-link" do %>
-            <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
-              <%# <%= category.photo %>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
-
-    <%# <%= link_to "Create category", new_category_path, class: "btn btn-flat border bg-primary text-white" %>
-
-  </span>
-</section>
+<%= render 'shared/portfolio' %>
 
 <section>
   <span>
@@ -32,12 +14,7 @@
   </span>
 </section>
 
-<section id="scrollspyabout">
-  <span>
-    <h1>About</h1>
-    <p>I'm a photographer specializing in babies for over 10 years. I love doing this, each session is unique, and each one I do with a lot of love and care in every detail, if that's what you're looking for, you're in the right place, and it will be a great pleasure to record moments of your life.</p>
-  </span>
-</section>
+<%= render 'shared/about' %>
 
 <section>
   <span>
@@ -46,43 +23,7 @@
   </span>
 </section>
 
-<section id="scrollspycontact" class="footer">
-
-  <div class="footer-contact-container">
-    <span>
-      <%= render "contacts/new" %>
-    </span>
-  </div>
-
-
-  <div class="col-12">
-    <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
-
-    <!-- Facebook -->
-    <a class="btn" href="#!">
-      <i class="bi bi-facebook"></i>
-    </a>
-
-    <!-- Twitter -->
-    <a class="btn" href="#!">
-      <i class="bi bi-twitter"></i>
-    </a>
-
-    <!-- Google -->
-    <a class="btn" href="#!">
-      <i class="bi bi-google"></i>
-    </a>
-
-    <!-- Instagram -->
-    <a class="btn" href="#!">
-      <i class="bi bi-instagram"></i>
-    </a>
-
-  </div>
-
-</section>
-
-
+<%= render 'shared/footer' %>
 
 
 <% if flash[:notice] %>
