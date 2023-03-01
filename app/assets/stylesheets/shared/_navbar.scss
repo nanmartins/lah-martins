@@ -1,10 +1,45 @@
+.nav-link {
+  display: inline-block;
+  position: relative;
 
-.nav-link, .dropdown-item {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2.2px;
   font-size: 16px;
   color: #575757;
 }
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 15px;
+  left: 0;
+  color: #575757;
+  background-color: #eeaeae;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+  color: #575757;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-link:hover {
+  color: #575757;
+}
+
+
+//////
+// .nav-link, .dropdown-item {
+//   font-family: 'Oswald', sans-serif;
+//   letter-spacing: 2.2px;
+//   font-size: 16px;
+//   color: #575757;
+// }
 
 .site-navbar {
   z-index: 10;
