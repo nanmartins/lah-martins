@@ -12,7 +12,9 @@
           <% end %>
 
           <div class="portfolio-cat-title">
-            <%= category.title %>
+            <%= link_to category_path(category), class: "cat-title-link" do %>
+              <%= category.title %>
+            <% end %>
           </div>
 
         </div>
