@@ -1,7 +1,7 @@
 
 
 #scrollspyportfolio {
-  height: 80%;
+  height: auto;
   width: 100%;
   background: white;
   display: flex;
@@ -13,7 +13,7 @@
   font-family: 'Amatic SC', cursive;
   font-size: 78px;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 50px auto;
   color: #515151;
 }
 
@@ -37,7 +37,7 @@
 
 
 .index-cat-row {
-  margin: 0;
+  margin: 50px auto;
   padding: 0;
   flex-wrap: nowrap;
   justify-content: center;
@@ -45,12 +45,11 @@
 }
 
 .card-category {
-  // width: calc(80vw / 3);
+  width: calc(80vw / 3);
   background-size: cover;
   background-position: center;
   margin: auto;
-  padding: auto;
-  box-sizing: content-box;
+  height: 50vh;
 }
 
 .index-cat-cards {
@@ -61,16 +60,32 @@
 
 
 @media (max-width: 991.98px) {
-  .portfolio-cat-title {
-    display: none;
+
+  .portfolio-title {
+    margin: 30px auto 30px auto;
+  }
+  .index-cat-row {
+    width: 100vw;
+    margin: 20px auto 40px auto;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-category {
+    background-size: cover;
+    width: auto;
+    // height: 200px;
+    display: grid;
+    align-items: center;
+    height: calc(55vh / 3);
+    margin: 0;
+    gap: 15px;
+    // width: 90vw;
   }
   .index-cat-cards {
     width: 90vw;
   }
-  .index-cat-row {
-    width: 100vw;
-  }
-  .card-category {
-    background-size: cover;
+  .portfolio-cat-title {
+    font-size: 20px;
   }
 }
