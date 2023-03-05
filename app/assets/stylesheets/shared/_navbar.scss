@@ -1,3 +1,13 @@
+
+.site-navbar {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  // padding: .45rem;
+}
+
 .nav-link {
   display: inline-block;
   position: relative;
@@ -41,13 +51,6 @@
 //   color: #575757;
 // }
 
-.site-navbar {
-  z-index: 10;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  // padding: .45rem;
-}
 
 
 // small screen
