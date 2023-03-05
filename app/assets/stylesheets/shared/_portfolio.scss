@@ -1,7 +1,7 @@
 
 
 #scrollspyportfolio {
-  height: auto;
+  height: 90%;
   width: 100%;
   background: white;
   display: flex;
@@ -61,6 +61,9 @@
 
 @media (max-width: 991.98px) {
 
+  #scrollspyportfolio {
+    height: 120%;
+  }
   .portfolio-title {
     margin: 30px auto 30px auto;
   }
