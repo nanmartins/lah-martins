@@ -6,11 +6,11 @@
     <p>I'm a photographer specializing in babies for over 10 years. I love doing this, each session is unique, and each one I do with a lot of love and care in every detail, if that's what you're looking for, you're in the right place, and it will be a great pleasure to record moments of your life.</p>
   </span> %>
   <div class="about-background-container">
-    <div class="row" style="width: 80vw; height: 60%;">
+    <div class="row" style="width: 80vw;">
       <div class="col-md-6 about-text-container">
         <div class="about-text-body">
           <h2 class="about-main-text">
-            Welcome, my name is Laysi
+            Welcome, my name <br>is <span class="about-text-name">Laysi</span>
           </h2>
           <p class="about-text">
             I'm a photographer specializing in babies for over 10 years. I love doing this, each session is unique, and each one I do with a lot of love and care in every detail, if that's what you're looking for, you're in the right place, and it will be a great pleasure to record moments of your life.
@@ -18,8 +18,9 @@
         </div>
       </div>
 
-      <div class="col-md-6">
-        <img class="img-fluid" alt="myphoto"  src="https://images.unsplash.com/photo-1563126153-74b8e04c1070?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+      <div class="col-md-6 about-img-container">
+        <%# <img class="img-fluid about-image" alt="myphoto"  src="https://images.unsplash.com/photo-1563126153-74b8e04c1070?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"> %>
+        <%= image_tag "myphoto.jpeg", alt: "myphoto", class: "about-image d-flex rounded justify-self-center mx-lg-auto img-fluid", loading: "lazy" %>
       </div>
     </div>
 

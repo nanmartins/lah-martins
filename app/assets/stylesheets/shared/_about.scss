@@ -4,17 +4,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin: 100px auto;
+  padding: 100px 0;
 }
 
+// TEXT
 .about-text-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 0 50px;
 }
 
 .about-main-text {
   font-family: 'Amatic SC', cursive;
-  // font-weight: 700;
-  font-size: 55px;
+  font-size: 60px;
+}
+
+.about-text-name {
+  color: #EAC9C1;
+  text-decoration: underline wavy #eac9c1da 3px;
+}
+
+.about-text {
+  font-family: 'Amatic SC', cursive;
+  font-size: 26px;
+}
+
+
+// IMAGE
+.about-img-container {
+  display: flex;
+  justify-content: end;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+
+  .about-background-container {
+    padding: 0 0 100px 0;
+  }
+
+  .about-text-container {
+    padding: 0;
+  }
+
+  .about-main-text {
+    font-size: 50px;
+  }
+
+  .about-text {
+    font-size: 22px;
+  }
 }
