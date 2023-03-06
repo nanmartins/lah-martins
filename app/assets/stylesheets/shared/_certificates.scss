@@ -5,16 +5,16 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 120px 0;
+  margin: 80px 0;
   height: 300px;
 }
 
-.certificate-icons {
+.certificates-icons {
   height: 130px;
   margin: 0 auto;
 }
 
-.certificate-small-icon {
+.certificates-small-icon {
   height: 170px;
   box-shadow: 4px solid white;
 }
@@ -23,11 +23,11 @@
 //M-SIZE SCREEN
 @media (max-width: 991.98px) {
 
-  .certificate-icons {
+  .certificates-icons {
     height: 80px;
   }
 
-  .certificate-small-icon {
+  .certificates-small-icon {
     height: 120px;
   }
 }
@@ -40,16 +40,23 @@
     display: grid;
     align-items: center ;
     height: auto;
-    padding: 20px 0;
-    gap: 20px;
+    padding: 30px 0;
+    gap: 30px;
   }
 
-  .certificate-icons {
-    height: 50px;
+  .certificates-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .certificates-icons {
+    height: 80px;
   }
 
   .certificate-small-icon {
-    height: 90px;
+    height: 120px;
   }
 }
 
@@ -57,7 +64,7 @@
 //XS-SIZE SCREEN
 @media (max-width: 350px) {
 
-  .certificate-icons {
+  .certificates-icons {
     height: 40px;
   }
 
