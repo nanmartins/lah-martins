@@ -99,7 +99,7 @@
   }
 
   .brand-logo-container {
-    border-bottom: 1px solid #37323e86;
+    border-bottom: 1px solid #888098;
     text-align: start;
   }
 
@@ -109,7 +109,7 @@
     top: -45px;
     right: 20px;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
     border: none;
     color: #37323E;
     font-size: 22px;
@@ -124,17 +124,15 @@
   .dropdown {
     display: flex;
     justify-content: end;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
   }
 
   .dropdownMenu {
-    // display: none;
-    // justify-items: end;
-    // background-color: rgba(255, 255, 255, 0);
+    display: none;
     filter: blur(20px);
     opacity: 0;
     transition: 0.4s;
-    transform: translateY(-600px);
+    transform: translateX(600px);
   }
 
   .dropdownMenuActive {
@@ -146,7 +144,7 @@
     line-height: 100px;
     font-weight: 200;
     padding: 50px 20px 50px 0;
-    border: 1px solid #37323E;
+    border: 1px solid #888098;
     border-top: none;
     border-radius: 5px;
 
@@ -165,21 +163,8 @@
     letter-spacing: 2.2px;
     font-size: 22px;
     font-weight: 300;
-    color: #37323E;
-    text-shadow: 1px 1px #eebebea7;
-    // padding-right: 20px;
-
-
-    // display: flex;
-    // justify-content: end;
-    // align-items: center;
-    // position: relative;
-    // font-family: 'Oswald', sans-serif;
-    // letter-spacing: 2.2px;
-    // font-size: 16px;
-    // font-weight: 300;
-    // color: #515151;
-    // padding-right: 20px;
+    color: #888098;
+    text-shadow: 1px 1px #eeaeae;
   }
 
   .dropdown-item:after {
@@ -194,20 +179,6 @@
     background-color: #eeaeae;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-
-    // content: '';
-    // position: absolute;
-    // width: calc(100% - 10px);
-    // // display: flex;
-    // // justify-content: end;
-    // transform: scaleX(0);
-    // height: 2px;
-    // bottom: 15px;
-    // left: 25px;
-    // color: #515151;
-    // background-color: #eeaeae;
-    // transform-origin: bottom right;
-    // transition: transform 0.25s ease-out;
   }
 
   .dropdown-item:hover:after {
@@ -219,7 +190,6 @@
   .dropdown-item:hover {
     color: #515151;
   }
-  /////
 
 }
 
@@ -266,8 +236,8 @@
     display: inline-block;
   }
   .site-navbar .site-navigation .site-menu > li > a {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
     padding: 20px 0px;
   }
 }

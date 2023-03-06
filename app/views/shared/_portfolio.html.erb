@@ -1,11 +1,12 @@
 
+<hr class="featurette-divider" style="width: 75%; margin: 40px auto -40px auto;">
 
 <section id="scrollspyportfolio">
   <span>
     <h1 class="portfolio-title">Portfolio</h1>
     <div class="row index-cat-row">
       <% @categories.each do |category| %>
-        <div class="col-12 col-sm-6 col-md-4 rounded border index-cat-cards">
+        <div class="col-12 col-sm-6 col-md-4 rounded index-cat-cards">
           <%= link_to category_path(category), class: "text-decoration-none index-cat-link" do %>
             <div class="card-category rounded" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.1 ), rgba(0,0,0,0.1)), url(<%= category.photo.attached? ? cl_image_path(category.photo.key) : image_path("logo-color.png") %>)">
             </div>
