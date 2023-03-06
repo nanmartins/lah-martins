@@ -1,0 +1,67 @@
+
+
+.certificates-main-container {
+  background-color: #37323E;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 120px 0;
+  height: 300px;
+}
+
+.certificate-icons {
+  height: 130px;
+  margin: 0 auto;
+}
+
+.certificate-small-icon {
+  height: 170px;
+  box-shadow: 4px solid white;
+}
+
+
+//M-SIZE SCREEN
+@media (max-width: 991.98px) {
+
+  .certificate-icons {
+    height: 80px;
+  }
+
+  .certificate-small-icon {
+    height: 120px;
+  }
+}
+
+
+//S-SIZE SCREEN
+@media (max-width: 600px) {
+
+  .certificates-main-container {
+    display: grid;
+    align-items: center ;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .certificate-icons {
+    height: 50px;
+  }
+
+  .certificate-small-icon {
+    height: 90px;
+  }
+}
+
+
+//XS-SIZE SCREEN
+@media (max-width: 350px) {
+
+  .certificate-icons {
+    height: 40px;
+  }
+
+  .certificate-small-icon {
+    height: 70px;
+  }
+}
