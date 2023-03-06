@@ -72,13 +72,13 @@
 @media (max-width: 991.98px) {
 
   #scrollspyportfolio {
-    height: 120%;
+    height: 100%;
   }
   .portfolio-title {
     margin: 30px auto 30px auto;
   }
   .index-cat-row {
-    width: 100vw;
+    // height: 100vh;
     margin: 20px auto 40px auto;
     display: grid;
     align-items: center;
