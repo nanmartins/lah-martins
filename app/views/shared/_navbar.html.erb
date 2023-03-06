@@ -1,18 +1,18 @@
 
 
 <header class="site-navbar site-navbar-target" role="banner">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-center position-relative">
       <div class="col-lg-5">
         <nav class="site-navigation text-right ml-auto " role="navigation">
-          <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+          <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block navlink-left">
             <li class="active"><a href="#scrollspyhome" class="nav-link">HOME</a></li>
             <li><a href="#scrollspyportfolio" class="nav-link">PORTFOLIO</a></li>
           </ul>
         </nav>
       </div>
 
-      <div class="col-lg-2 text-center">
+      <div class="col-lg-2 bg-white brand-logo-container">
         <%= link_to root_path, class: "brand-logo" do %>
           <%= image_tag "logo.png" %>
         <% end %>
@@ -26,7 +26,7 @@
 
       <div class="col-lg-5">
         <nav class="site-navigation text-left mr-auto " role="navigation">
-          <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+          <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block navlink-right">
             <li><a href="#scrollspyabout" class="nav-link">ABOUT</a></li>
             <li><a href="#scrollspycontact" class="nav-link">CONTACT</a></li>
           </ul>
@@ -37,7 +37,7 @@
 
   <div class="dropdown">
     <button class ="dropdownButton">
-      <i class="bi bi-arrow-down"></i>
+      <i class="bi-plus-circle"></i>
     </button>
 
     <div class="dropdownMenu">
