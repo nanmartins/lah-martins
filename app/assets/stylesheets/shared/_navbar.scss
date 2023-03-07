@@ -18,10 +18,12 @@
   display: inline-block;
   position: relative;
 
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 2.2px;
+  // font-family: 'Oswald', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
   font-size: 20px;
   font-weight: 300;
+  // text-shadow: 1px 1px #d3d3e2;
   color: #515151;
 }
 
@@ -115,13 +117,14 @@
     border: none;
     color: #908a9c;
     text-shadow: 1px 1px #ffcdcd;
-    // font-size: 26px;
+    font-size: 26px;
     transition: 0.4s;
   }
 
-  .dropdownBtn-icon {
-    font-size: 26px;
-  }
+  // .dropdownBtn-icon {
+  //   font-size: 26px;
+  //   font-family: 'Josefin Sans', sans-serif;
+  // }
 
   .plus-btn-rotate {
     transition: 0.4s;
@@ -168,12 +171,13 @@
     display: flex;
     position: relative;
     justify-content: end;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2.2px;
-    font-size: 22px;
+    // font-family: 'Oswald', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
     font-weight: 300;
     color: #908a9c;
-    text-shadow: 1px 1px #eeaeae;
+    text-shadow: 1px 1px #eeaeaecc;
   }
 
   .dropdown-item:after {
