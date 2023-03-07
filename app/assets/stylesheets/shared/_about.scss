@@ -1,10 +1,18 @@
 
 
+.about-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 78px;
+  text-align: center;
+  margin: 120px auto 30px auto;
+  color: #515151;
+}
+
 .about-background-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 20px 0 80px 0;
 }
 
 .about-text-img-row {
@@ -31,8 +39,12 @@
 }
 
 .about-text {
-  font-family: 'Amatic SC', cursive;
+  // font-family: 'Amatic SC', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 26px;
+  font-weight: 200;
+  letter-spacing: 1.2px;
+  color: #978fa7;
 }
 
 

@@ -13,7 +13,7 @@
   font-family: 'Amatic SC', cursive;
   font-size: 78px;
   text-align: center;
-  margin: 50px auto;
+  margin: 0 auto 50px auto;
   color: #515151;
 }
 
@@ -73,7 +73,7 @@
 @media (max-width: 991.98px) {
 
   #scrollspyportfolio {
-    height: 100%;
+    height: auto;
   }
   .portfolio-title {
     margin: 30px auto 30px auto;
