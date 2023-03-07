@@ -108,14 +108,19 @@
   .dropdownButton {
     display: block;
     position: absolute;
-    top: -50px;
-    right: 20px;
-    padding: 0;
+    top: -60px;
+    right: 10px;
+    padding: 10px;
     background-color: transparent;
     border: none;
-    color: #37323E;
-    font-size: 26px;
+    color: #908a9c;
+    text-shadow: 1px 1px #ffcdcd;
+    // font-size: 26px;
     transition: 0.4s;
+  }
+
+  .dropdownBtn-icon {
+    font-size: 26px;
   }
 
   .plus-btn-rotate {
@@ -142,7 +147,7 @@
     display: flex;
     visibility: visible;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.872);
+    background-color: rgba(255, 255, 255, 0.9);
     width: 65vw;
     line-height: 100px;
     letter-spacing: 5px;
@@ -167,7 +172,7 @@
     letter-spacing: 2.2px;
     font-size: 22px;
     font-weight: 300;
-    color: #888098;
+    color: #908a9c;
     text-shadow: 1px 1px #eeaeae;
   }
 
