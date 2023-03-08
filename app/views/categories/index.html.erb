@@ -17,13 +17,14 @@
 
 <%= render 'shared/footer' %>
 
-
-<% if flash[:notice] %>
-  <div class="flash-message">
-    <%= flash[:notice] %>
-  </div>
-<% elsif flash[:alert] %>
-  <div class="flash-message">
-    <%= flash[:alert] %>
-  </div>
-<% end %>
+<div class="d-flex justify-content-end">
+  <% if flash[:notice] %>
+    <div class="alert flash-message" style="border: 1px solid #20c997; color: #20c997;">
+      <%= flash[:notice] %>
+    </div>
+  <% elsif flash[:alert] %>
+    <div class="alert flash-message" style="border: 1px solid #dc3545; color: #dc3545;">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+</div>

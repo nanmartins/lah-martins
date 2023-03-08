@@ -29,22 +29,22 @@ body {
   height: 100%;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 .flash-message {
-  position: sticky;
-  display: flex !important;
-  justify-items: end;
+  position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   width: fit-content;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
-  padding: 20px;
+  letter-spacing: 1px;
+  padding: 30px;
   color: #535353;
   background-color: snow;
-  border: 1px dotted red;
+  margin: 0;
 }
 
 
