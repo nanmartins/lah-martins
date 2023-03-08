@@ -3,19 +3,19 @@
 
 <%= form_with model: @contact, html: { id: "contact-form" } do |form| %>
 
-  <div class="contact-form-container">
-    <div class="contat-name-email">
+  <div class="row contact-form-container">
+    <div class="col-lg-6 contat-name-email">
       <div class="field">
         <%= form.label :name, class: "form-name-label" %>
-        <%= form.text_field :name, class: "" %>
+        <%= form.text_field :name, class: "form-name-field" %>
       </div>
       <div class="field">
-        <%= form.label :email, class: "form-name-label" %>
-        <%= form.email_field :email, class: "form-name-field" %>
+        <%= form.label :email, class: "form-email-label" %>
+        <%= form.email_field :email, class: "form-email-field" %>
       </div>
     </div>
 
-    <div class="contact-message">
+    <div class="col-lg-6 contact-message">
       <div class="field">
         <%= form.label :message, class: "form-message-label" %>
         <%= form.text_area :message, class: "form-message-field" %>
