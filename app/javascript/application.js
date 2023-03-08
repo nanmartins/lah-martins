@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (flashContainer) {
     setTimeout(() => {
       flashContainer.remove();
-    }, 5000); // remove after 5 seconds
+    }, 6000); // remove after 6 seconds
   }
 });
