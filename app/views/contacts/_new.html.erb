@@ -1,29 +1,28 @@
 
 
-
 <%= form_with model: @contact, html: { id: "contact-form" } do |form| %>
 
   <div class="row contact-form-container">
     <div class="col-lg-6 contat-name-email">
-      <div class="field">
-        <%= form.label :name, class: "form-name-label" %>
-        <%= form.text_field :name, class: "form-name-field" %>
+      <div class="field form-left-div">
+        <%= form.label :name, class: "form-label-font form-name-label" %>
+        <%= form.text_field :name, class: "form-label-field-font form-name-field" %>
       </div>
-      <div class="field">
-        <%= form.label :email, class: "form-email-label" %>
-        <%= form.email_field :email, class: "form-email-field" %>
+      <div class="field form-left-div">
+        <%= form.label :email, class: "form-label-font form-email-label" %>
+        <%= form.email_field :email, class: "form-label-field-font form-email-field" %>
       </div>
     </div>
 
     <div class="col-lg-6 contact-message">
-      <div class="field">
-        <%= form.label :message, class: "form-message-label" %>
-        <%= form.text_area :message, class: "form-message-field" %>
-      </div>
-      <div class="actions">
-        <%= form.submit %>
+      <div class="field form-right-div">
+        <%= form.label :message, class: "form-label-font form-message-label" %>
+        <%= form.text_area :message, class: "form-label-field-font form-message-field" %>
       </div>
     </div>
+      <div class="actions">
+        <%= form.submit value: "send", class: "email-submit-btn" %>
+      </div>
 
   </div>
 <% end %>

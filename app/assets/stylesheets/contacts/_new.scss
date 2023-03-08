@@ -22,13 +22,61 @@
 //   padding: 15px;
 // }
 
+.contact-form-container {
+  width: 65vw;
+  margin: auto;
+}
+
+.contat-name-email {
+  display: grid;
+  gap: 40px;
+}
+
+.form-label-field-font {
+  height: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  padding-left: 10px;
+  border: 1px solid #e5e6e4;
+}
+
 
 .field {
   display: flex;
   flex-direction: column;
 }
 
+.form-label-font {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.form-message-field {
+  height: 185px;
+}
+
 .actions {
   display: flex;
   justify-content: center;
+}
+
+.email-submit-btn {
+  padding: 0 30px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  margin: 30px;
+}
+
+
+
+@media (max-width: 991.98px) {
+  .contact-form-container {
+    width: 90vw;
+  }
+
+  .contat-name-email {
+    gap: 0;
+  }
 }
