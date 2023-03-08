@@ -3,7 +3,6 @@
 #scrollspyportfolio {
   height: 80%;
   width: 100%;
-  // background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,14 +54,10 @@
 .index-cat-cards {
   padding: 5px;
   background-color: white;
-  // box-shadow: 3px 2px 2px rgba(218, 218, 218, 0.92);
   border: 1px solid #e5e6e4;
-  // padding: 10px;
-  // box-shadow: 5px 10px 15px #888888;
   transition: 0.6s;
 
     &:hover {
-      // padding: 15px;
       box-shadow: 5px 10px 15px #888888;
       transition: 0.6s;
     }
@@ -75,30 +70,32 @@
   #scrollspyportfolio {
     height: auto;
   }
+
   .portfolio-title {
     margin: 30px auto 30px auto;
   }
+
   .index-cat-row {
-    // height: 100vh;
     margin: 20px auto 40px auto;
     display: grid;
     align-items: center;
     gap: 10px;
   }
+
   .card-category {
     background-size: cover;
     width: auto;
-    // height: 200px;
     display: grid;
     align-items: center;
     height: calc(55vh / 3);
     margin: 0;
     gap: 15px;
-    // width: 90vw;
   }
+
   .index-cat-cards {
     width: 90vw;
   }
+
   .portfolio-cat-title {
     font-size: 20px;
   }
