@@ -17,6 +17,29 @@
 
 .medias-title {
   font-family: 'Amatic SC', cursive;
-  font-size: 40px;
+  font-size: 44px;
   margin-top: 80px;
+}
+
+.media-icon {
+  font-size: 24px;
+  opacity: 0.7;
+
+    &:hover {
+      text-decoration: none;
+      color: #eeaeae;
+    }
+}
+
+.media-icons-container {
+  padding: 30px 0 80px 0;
+}
+
+
+.footer-contact-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 78px;
+  text-align: center;
+  color: #515151;
+  margin: 100px auto 50px auto;
 }

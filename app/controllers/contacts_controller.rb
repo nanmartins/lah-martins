@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
         redirect_to root_path
       else
         flash[:alert] = "Não foi possível enviar o email. Tente novamente mais tarde."
-        render :new
+        redirect_to root_path
       end
   end
 
