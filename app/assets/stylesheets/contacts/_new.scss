@@ -67,6 +67,14 @@
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   margin: 30px;
+  background-color: #ffede8;
+  border: 1px solid #616161;
+
+    &:hover {
+      background-color: #EAC9C1;
+      color: white;
+      font-weight: bold;
+    }
 }
 
 
