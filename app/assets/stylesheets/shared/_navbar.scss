@@ -33,7 +33,7 @@
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 15px;
+  bottom: 20px;
   left: 0;
   color: #515151;
   background-color: #eeaeae;
@@ -115,20 +115,15 @@
     padding: 10px;
     background-color: transparent;
     border: none;
-    color: #908a9c;
-    text-shadow: 1px 1px #ffcdcd;
+    color: #515151bd;
     font-size: 26px;
     transition: 0.4s;
   }
 
-  // .dropdownBtn-icon {
-  //   font-size: 26px;
-  //   font-family: 'Josefin Sans', sans-serif;
-  // }
-
   .plus-btn-rotate {
     transition: 0.4s;
     transform: rotate(135deg);
+    font-weight: 300;
   }
 
   .dropdown {
@@ -176,8 +171,9 @@
     letter-spacing: 1.5px;
     font-size: 20px;
     font-weight: 300;
-    color: #908a9c;
-    text-shadow: 1px 1px #eeaeaecc;
+    // color: #908a9c;
+    color: #515151;
+    // text-shadow: 1px 1px #eeaeaecc;
   }
 
   .dropdown-item:after {
