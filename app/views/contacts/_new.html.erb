@@ -6,11 +6,11 @@
     <div class="col-lg-6 contat-name-email">
       <div class="field form-left-div">
         <%= form.label :name, class: "form-label-font form-name-label" %>
-        <%= form.text_field :name, class: "form-label-field-font rounded form-name-field" %>
+        <%= form.text_field :name, class: "form-label-field-font name-email-field rounded form-name-field" %>
       </div>
       <div class="field form-left-div">
         <%= form.label :email, class: "form-label-font form-email-label" %>
-        <%= form.email_field :email, class: "form-label-field-font rounded rounded form-email-field" %>
+        <%= form.email_field :email, class: "form-label-field-font name-email-field rounded rounded form-email-field" %>
       </div>
     </div>
 
@@ -21,7 +21,7 @@
       </div>
     </div>
       <div class="actions">
-        <%= form.submit value: "send", class: "email-submit-btn" %>
+        <%= form.submit value: "send", class: "email-submit-btn rounded" %>
       </div>
 
   </div>
