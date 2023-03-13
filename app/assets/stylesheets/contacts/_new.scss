@@ -51,6 +51,7 @@
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   padding-left: 10px;
+  text-align: center;
 }
 
 .form-message-field {
@@ -67,11 +68,12 @@
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   margin: 30px;
+  color: #616161;
   background-color: #ffede8;
   border: 1px solid #616161;
 
     &:hover {
-      background-color: #EAC9C1;
+      background-color: #eeaeae;
       color: white;
       font-weight: bold;
     }

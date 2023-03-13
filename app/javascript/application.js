@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
+// FLASH TIMER
 document.addEventListener("DOMContentLoaded", () => {
   const flashContainer = document.querySelector(".flash-message");
 
   if (flashContainer) {
     setTimeout(() => {
       flashContainer.remove();
-    }, 6000); // remove after 6 seconds
+    }, 6000);
   }
 });
