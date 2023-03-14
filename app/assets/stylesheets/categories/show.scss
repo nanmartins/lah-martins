@@ -1,5 +1,32 @@
 .cat-show-title {
-  font-size: 46px;
+  font-family: 'Amatic SC', cursive;
   color: white;
+  font-size: 70px;
   text-shadow: 2px 2px black;
+}
+
+
+.cat-return-link {
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  transition: 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      color: #ffede8;
+      text-shadow: 4px 4px 5px black;
+      transition: 0.3s;
+    }
+}
+
+
+
+@media (max-width: 991.98px) {
+  .cat-return-link {
+    font-size: 40px;
+  }
 }

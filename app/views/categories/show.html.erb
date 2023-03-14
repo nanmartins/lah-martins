@@ -6,3 +6,12 @@
     <%# <%= button_to "delete", category_path(@category), method: :delete, class: "btn border bg-white", data: { confirm: "Are you sure you want to delete?" } %>
   </div>
 </div>
+
+<div class="cat-return-btn">
+  <%= link_to root_path, class: "cat-return-link" do %>
+    <%# <%= image_tag "logo.png" %>
+    <i class="bi bi-arrow-left-circle"></i>
+  <% end %>
+</div>
+
+<%= render 'shared/about' %>
