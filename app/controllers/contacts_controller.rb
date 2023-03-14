@@ -4,10 +4,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
       if @contact.valid?
         ContactMailer.contact_email(@contact).deliver_now
-        flash[:notice] = "Mensagem enviada com sucesso"
+        flash[:notice] = "Thanks for your message. We'll be in touch soon!"
         redirect_to root_path
       else
-        flash[:alert] = "Não foi possível enviar o email. Tente novamente mais tarde."
+        flash[:alert] = "Oops! Something went wrong. Please check your information and try again."
         redirect_to root_path
       end
   end
