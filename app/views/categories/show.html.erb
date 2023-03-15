@@ -1,10 +1,10 @@
 <%# need to fix image position with css %>
-<div class="card-large h-80" style="background-size: cover; background-position: center; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @category.photo.attached? ? cl_image_path(@category.photo.key, crop: :fill) : image_path("logo-color.png", width: 400, height: 800, crop: :fill) %>)">
+<div class="card-large h-80" style="background-size: cover; background-position: center; background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(<%= @category.photo.attached? ? cl_image_path(@category.photo.key, crop: :fill) : image_path("logo-color.png", width: 400, height: 800, crop: :fill) %>)">
   <h2 class="d-flex align-items-center justify-content-center cat-show-title" style="height: 800px"><%= @category.title %>
   </h2>
-  <div class="d-flex justify-content-end p-2">
+  <%# <div class="d-flex justify-content-end p-2"> %>
     <%# <%= button_to "delete", category_path(@category), method: :delete, class: "btn border bg-white", data: { confirm: "Are you sure you want to delete?" } %>
-  </div>
+  <%# </div> %>
 </div>
 
 <div class="cat-return-btn">
