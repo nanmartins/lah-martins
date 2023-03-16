@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
 
     # Case the PO has not enough images to fill each category page, will use this conditions to render each partial view
     if @category.id == 1
-      render partial: 'jobs/newborn'
+      render partial: 'categories/newborn'
     elsif @category.id == 2
       render partial: 'jobs/maternity'
     else
