@@ -7,11 +7,20 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
+    @category = Category.find(params[:id])
+
+    # Case the PO has not enough images to fill each category page, will use this conditions to render each partial view
+    # if @category.id == 1
+    #   render partial: 'shared/about'
+    # elsif @category.id == 2
+    #   render partial: 'shared/certificates'
+    # else
+    #   render partial: 'shared/footer'
+    # end
   end
 
   def new
     @category = Category.new
-
   end
 
   def create
