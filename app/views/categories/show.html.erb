@@ -15,10 +15,10 @@
 
 
 
-<% if @category.id == 1 %>
-  <%= render partial: 'jobs/newborn' %>
-<% elsif @category.id == 2 %>
+<% if @category.id == 29 %>
+  <%= render partial: 'jobs/cakesmash' %>
+<% elsif @category.id == 30 %>
   <%= render partial: 'jobs/maternity' %>
 <% else %>
-  <%= render partial: 'jobs/cakesmash' %>
+  <%= render partial: 'jobs/newborn' %>
 <% end %>
