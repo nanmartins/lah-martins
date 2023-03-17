@@ -9,13 +9,13 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
 
     # Case the PO has not enough images to fill each category page, will use this conditions to render each partial view
-    if @category.id == 1
-      render partial: 'categories/newborn'
-    elsif @category.id == 2
-      render partial: 'jobs/maternity'
-    else
-      render partial: 'jobs/cakesmash'
-    end
+    # if @category.id == 1
+    #   render partial: 'jobs/newborn'
+    # elsif @category.id == 2
+    #   render partial: 'jobs/maternity'
+    # else
+    #   render partial: 'jobs/cakesmash'
+    # end
   end
 
   def new

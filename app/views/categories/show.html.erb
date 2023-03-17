@@ -1,6 +1,6 @@
 <%# need to fix image position with css %>
-<div class="card-large h-80" style="background-size: cover; background-position: center; background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(<%= @category.photo.attached? ? cl_image_path(@category.photo.key, crop: :fill) : image_path("logo-color.png", width: 400, height: 800, crop: :fill) %>)">
-  <h2 class="d-flex align-items-center justify-content-center cat-show-title" style="height: 800px"><%= @category.title %>
+<div class="card-large" style="background-size: cover; background-position: center; background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(<%= @category.photo.attached? ? cl_image_path(@category.photo.key, crop: :fill) : image_path("logo-color.png", width: 400, height: 800, crop: :fill) %>)">
+  <h2 class="d-flex align-items-center justify-content-center cat-show-title"><%= @category.title %>
   </h2>
   <%# <div class="d-flex justify-content-end p-2"> %>
     <%# <%= button_to "delete", category_path(@category), method: :delete, class: "btn border bg-white", data: { confirm: "Are you sure you want to delete?" } %>
@@ -9,7 +9,16 @@
 
 <div class="cat-return-btn">
   <%= link_to root_path, class: "cat-return-link" do %>
-    <%# <%= image_tag "logo.png" %>
     <i class="bi bi-arrow-left-circle"></i>
   <% end %>
 </div>
+
+
+
+<% if @category.id == 1 %>
+  <%= render partial: 'jobs/newborn' %>
+<% elsif @category.id == 2 %>
+  <%= render partial: 'jobs/maternity' %>
+<% else %>
+  <%= render partial: 'jobs/cakesmash' %>
+<% end %>

@@ -11,6 +11,7 @@ body {
   color: white;
   font-size: 70px;
   text-shadow: 2px 2px black;
+  height: 800px;
 }
 
 
@@ -36,5 +37,9 @@ body {
 @media (max-width: 991.98px) {
   .cat-return-link {
     font-size: 40px;
+  }
+
+  .cat-show-title {
+    height: 500px;
   }
 }
