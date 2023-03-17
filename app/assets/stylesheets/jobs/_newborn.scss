@@ -16,35 +16,24 @@
   background-position: center;
   background-size: cover;
   height: 100%;
+  width: 100%;
   border: 1px solid #535353;
-}
-
-.newborn8-img {
-  display: none;
 }
 
 
 @media (max-width: 991.98px) {
 
-  .newborn-img-photo {
-    height: 100%;
-    width: 100%;
-  }
-
   .newborn-imgs-container {
     margin: 15px;
     gap: 10px;
     display: grid;
-    // padding-bottom: 15px;
     grid-template-areas:
       "newborn1 newborn1 newborn2 newborn2"
       "newborn1 newborn1 newborn3 newborn3"
-      "newborn8 newborn8 newborn4 newborn4"
-      "newborn6 newborn6 newborn5 newborn5"
+      "newborn6 newborn6 newborn6 newborn6"
+      "newborn6 newborn6 newborn6 newborn6"
+      "newborn4 newborn4 newborn5 newborn5"
       "newborn7 newborn7 newborn5 newborn5";
   }
 
-  .newborn8-img {
-    display: block;
-  }
 }
