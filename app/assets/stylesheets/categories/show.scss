@@ -9,9 +9,15 @@ body {
 .cat-show-title {
   font-family: 'Amatic SC', cursive;
   color: white;
-  font-size: 70px;
+  font-size: 100px;
   text-shadow: 2px 2px black;
-  height: 800px;
+  height: 100vh;
+  padding-right: 20px;
+  margin: 0;
+
+  &::after {
+    content: '_';
+  }
 }
 
 
@@ -19,14 +25,14 @@ body {
   font-size: 50px;
   color: white;
   text-shadow: 1px 1px 3px black;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 30px;
   transition: 0.3s;
 
     &:hover {
       text-decoration: none;
-      color: #ffede8;
+      color: white;
       text-shadow: 4px 4px 5px black;
       transition: 0.3s;
     }
@@ -41,5 +47,6 @@ body {
 
   .cat-show-title {
     height: 500px;
+    font-size: 60px;
   }
 }
