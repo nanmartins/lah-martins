@@ -1,0 +1,40 @@
+
+
+.maternity-imgs-container {
+  margin: 20px;
+  gap: 20px;
+  display: grid;
+  padding-bottom: 20px;
+  grid-template-areas:
+    "maternity1 maternity1 maternity2 maternity2"
+    "maternity1 maternity1 maternity3 maternity5"
+    "maternity8 maternity8 maternity3 maternity5"
+    "maternity8 maternity8 maternity4 maternity5"
+    "maternity6 maternity6 maternity7 maternity7";
+}
+
+.maternity-img-photo {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  // border: 1px solid #535353;
+}
+
+
+@media (max-width: 991.98px) {
+
+  .maternity-imgs-container {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+    grid-template-areas:
+      "maternity4 maternity4 maternity2 maternity2"
+      "maternity4 maternity4 maternity3 maternity3"
+      "maternity1 maternity1 maternity3 maternity3"
+      "maternity5 maternity5 maternity8 maternity8"
+      "maternity5 maternity5 maternity6 maternity6"
+      "maternity7 maternity7 maternity7 maternity7";
+  }
+
+}

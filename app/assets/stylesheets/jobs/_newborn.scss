@@ -8,7 +8,8 @@
   grid-template-areas:
     "newborn1 newborn1 newborn2 newborn2"
     "newborn1 newborn1 newborn3 newborn5"
-    "newborn1 newborn1 newborn4 newborn5"
+    "newborn8 newborn8 newborn3 newborn5"
+    "newborn8 newborn8 newborn4 newborn5"
     "newborn6 newborn6 newborn7 newborn7";
 }
 
@@ -17,7 +18,7 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  border: 1px solid #535353;
+  // border: 1px solid #535353;
 }
 
 
@@ -29,7 +30,7 @@
     display: grid;
     grid-template-areas:
       "newborn1 newborn1 newborn2 newborn2"
-      "newborn1 newborn1 newborn3 newborn3"
+      "newborn8 newborn8 newborn3 newborn3"
       "newborn6 newborn6 newborn6 newborn6"
       "newborn6 newborn6 newborn6 newborn6"
       "newborn4 newborn4 newborn5 newborn5"
