@@ -2,9 +2,9 @@
 <div class="card-large" style="background-size: cover; background-position: center; background-image: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.05)), url(<%= @category.photo.attached? ? cl_image_path(@category.photo.key, crop: :fill) : image_path("logo-color.png", width: 400, height: 800, crop: :fill) %>)">
   <h2 class="d-flex align-items-end justify-content-end cat-show-title"><%= @category.title %>
   </h2>
-  <div class="d-flex justify-content-end p-2">
-    <%= button_to "delete", category_path(@category), method: :delete, class: "btn border bg-white", data: { confirm: "Are you sure you want to delete?" } %>
-  </div>
+  <%# <div class="d-flex justify-content-end p-2"> %>
+    <%# <%= button_to "delete", category_path(@category), method: :delete, class: "btn border bg-white", data: { confirm: "Are you sure you want to delete?" } %>
+  <%# </div> %>
 </div>
 
 <div class="cat-return-btn">
@@ -15,7 +15,7 @@
 
 
 
-<% if @category.id == 40 %>
+<% if @category.id == 41 %>
   <%= render partial: 'jobs/cakesmash' %>
 <% elsif @category.id == 37 %>
   <%= render partial: 'jobs/maternity' %>
