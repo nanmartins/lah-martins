@@ -1,0 +1,41 @@
+
+
+.cakesmash-imgs-container {
+  margin: 20px;
+  gap: 20px;
+  display: grid;
+  padding-bottom: 20px;
+  grid-template-areas:
+    "cakesmash1 cakesmash1 cakesmash2 cakesmash2"
+    "cakesmash1 cakesmash1 cakesmash3 cakesmash5"
+    "cakesmash8 cakesmash8 cakesmash3 cakesmash5"
+    "cakesmash8 cakesmash8 cakesmash3 cakesmash5"
+    "cakesmash8 cakesmash8 cakesmash4 cakesmash4"
+    "cakesmash6 cakesmash6 cakesmash7 cakesmash7";
+}
+
+.cakesmash-img-photo {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  // border: 1px solid #535353;
+}
+
+
+@media (max-width: 991.98px) {
+
+  .cakesmash-imgs-container {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+    grid-template-areas:
+      "cakesmash1 cakesmash1 cakesmash2 cakesmash2"
+      "cakesmash8 cakesmash8 cakesmash3 cakesmash3"
+      "cakesmash6 cakesmash6 cakesmash6 cakesmash6"
+      "cakesmash6 cakesmash6 cakesmash6 cakesmash6"
+      "cakesmash4 cakesmash4 cakesmash5 cakesmash5"
+      "cakesmash7 cakesmash7 cakesmash5 cakesmash5";
+  }
+
+}
