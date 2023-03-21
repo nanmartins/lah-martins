@@ -95,10 +95,15 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .contact-form-container {
+    width: 55vw;
+  }
+}
 
 
 @media (min-width: 2000px) {
   .contact-form-container {
-    width: 50vw;
+    width: 45vw;
   }
 }
